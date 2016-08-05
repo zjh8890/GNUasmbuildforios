@@ -1,0 +1,19 @@
+IOS编译GNU汇编说明：
+
+Makefile：用于执行编译连接相关的target
+config.mak：用于配置编译环境
+arm：放入符合gnu标准的arm汇编
+arm64：放入如何gnu标准的arm64汇编
+tools：放入用于gnu转apple格式汇编的脚本gas-preprocessor.pl
+
+如何构建得到IOS库文件：
+
+命令及用途：
+make install
+说明：编译连接得到.a静态库
+make clean
+说明：清楚产生的.o以及.a文件
+
+结果位置：
+arm库路径： build/arm
+arm64库路径： build/arm64
